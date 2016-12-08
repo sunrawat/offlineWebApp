@@ -23,10 +23,11 @@ limitations under the License.
     <script> 
     window.addEventListener('load', function() {
 
-      var outputElement = document.getElementById('output');
+      var outputElement = document.getElementById('outputElement');
 
       navigator.serviceWorker.register('service-worker.js', { scope: './' })
         .then(function(r) {
+           outputElement.innerText ="registered service worker"
           console.log('registered service worker');
         })
         .catch(function(e) {
@@ -35,7 +36,8 @@ limitations under the License.
         });
        
       window.addEventListener('beforeinstallprompt', function(e) {
-        outputElement.textContent = 'beforeinstallprompt Event fired';
+        alert()
+        outputElement.innerText = 'beforeinstallprompt Event fired';
       });
     });
     </script>
