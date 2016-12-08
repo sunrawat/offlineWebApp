@@ -45,6 +45,12 @@ limitations under the License.
 
 window.counter=0;
 document.addEventListener("webkitfullscreenchange", function () {
+  alert(11111)
+          window.counter=1;
+        }, false);
+
+document.addEventListener("fullscreenchange", function () {
+  alert(22222)
           window.counter=1;
         }, false);
 
