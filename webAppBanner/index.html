@@ -20,7 +20,14 @@ limitations under the License.
     <title>Web App Install Banner: Basic Prompt Sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json">
-    <script> 
+
+  </head>
+  <body>
+  <button id="btnSave">save</button>
+      <div id="outputElement"> </div>
+    <h1>Hell it Woks !</h1>
+
+     <script> 
     window.addEventListener('load', function() {
 
       var outputElement = document.getElementById('outputElement');
@@ -34,16 +41,20 @@ limitations under the License.
           console.error('No working i guess ');
           console.error(e);
         });
-       
-      window.addEventListener('beforeinstallprompt', function(e) {
-        alert()
-        outputElement.innerText = 'beforeinstallprompt Event fired';
-      });
+     
+
+
+
+window.addEventListener('beforeinstallprompt', function(e) {
+  alert('beforeinstallprompt Event fired');
+
+});
+
+
+
+
+
     });
     </script>
-  </head>
-  <body>
-      <div id="outputElement"> </div>
-    <h1>Hell it Woks !</h1>
   </body>
 </head>
