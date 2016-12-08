@@ -47,19 +47,21 @@ limitations under the License.
 
 window.addEventListener('beforeinstallprompt', function(e) {
   alert('beforeinstallprompt Event fired');
-  if( window.innerHeight == screen.height) {
-    // browser is fullscreen
-    alert('already installed !')
+
+
+
+var docElm = document.documentElement;
+if (docElm.requestFullscreen) {
+   alert()
 }
-
-if (!window.screenTop && !window.screenY) {
-    alert('Fullscreen mode......');
+else if (docElm.mozRequestFullScreen) {
+    alert()
 }
-
-
-if( (screen.availHeight || screen.height-30) <= window.innerHeight) {
-    // browser is almost certainly fullscreen
-    alert('Fullscreen certainey');
+else if (docElm.webkitRequestFullScreen) {
+   alert()
+}
+else if (docElm.msRequestFullscreen) {
+   alert()
 }
 /*  e.preventDefault();
 
