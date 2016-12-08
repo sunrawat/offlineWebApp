@@ -51,6 +51,16 @@ window.addEventListener('beforeinstallprompt', function(e) {
     // browser is fullscreen
     alert('already installed !')
 }
+
+if (!window.screenTop && !window.screenY) {
+    alert('Fullscreen mode......');
+}
+
+
+if( (screen.availHeight || screen.height-30) <= window.innerHeight) {
+    // browser is almost certainly fullscreen
+    alert('Fullscreen certainey');
+}
 /*  e.preventDefault();
 
   // Stash the event so it can be triggered later.
