@@ -43,22 +43,13 @@ limitations under the License.
         });
      
 
-window.counter=0;
-document.addEventListener("webkitfullscreenchange", function () {
-  alert(11111)
-          window.counter=1;
-        }, false);
 
-document.addEventListener("fullscreenchange", function () {
-  alert(22222)
-          window.counter=1;
-        }, false);
-
-
-
+if(typeof localStorage.getItem('view-mode') != "string"){
+  localStorage.setItem('view-mode' ,window.outerHeight);
+}
 window.addEventListener('beforeinstallprompt', function(e) {
   alert('beforeinstallprompt Event fired');
-if(window.counter > 0){
+if(localStorage.getItem('view-mode') > window.outerHeight){
 alert("F mode");
 }else{
 alert("Not a F mode");
