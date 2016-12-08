@@ -44,9 +44,10 @@ limitations under the License.
      
 
 window.counter=0;
-document.addEventListener("fullscreenchange", function () {
+document.addEventListener("webkitfullscreenchange", function () {
           window.counter=1;
         }, false);
+
 
 
 window.addEventListener('beforeinstallprompt', function(e) {
