@@ -43,26 +43,20 @@ limitations under the License.
         });
      
 
+window.counter=0;
+document.addEventListener("fullscreenchange", function () {
+          window.counter=1;
+        }, false);
 
 
 window.addEventListener('beforeinstallprompt', function(e) {
   alert('beforeinstallprompt Event fired');
+if(window.counter > 0){
+alert("F mode");
+}else{
+alert("Not a F mode");
+}
 
-
-
-var docElm = document.documentElement;
-if (docElm.requestFullscreen) {
-   alert()
-}
-else if (docElm.mozRequestFullScreen) {
-    alert()
-}
-else if (docElm.webkitRequestFullScreen) {
-   alert()
-}
-else if (docElm.msRequestFullscreen) {
-   alert()
-}
 /*  e.preventDefault();
 
   // Stash the event so it can be triggered later.
