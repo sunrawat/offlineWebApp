@@ -47,7 +47,16 @@ limitations under the License.
 
 window.addEventListener('beforeinstallprompt', function(e) {
   alert('beforeinstallprompt Event fired');
+  if( window.innerHeight == screen.height) {
+    // browser is fullscreen
+    alert('already installed !')
+}
+/*  e.preventDefault();
 
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+
+  return false;*/
 });
 
 
