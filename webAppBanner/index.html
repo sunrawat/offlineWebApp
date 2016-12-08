@@ -49,7 +49,7 @@ if(typeof localStorage.getItem('view-mode') != "string"){
 }
 window.addEventListener('beforeinstallprompt', function(e) {
   alert('beforeinstallprompt Event fired');
-if(localStorage.getItem('view-mode') > window.outerHeight){
+if(localStorage.getItem('view-mode') < window.outerHeight){
 alert("F mode");
 }else{
 alert("Not a F mode");
