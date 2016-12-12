@@ -1,6 +1,7 @@
 {
   "name": "naukrigulf",
   "short_name": "naukrigulf",
+  "start_url": "index.html",
   "related_applications": [
     {
       "platform": "play",
