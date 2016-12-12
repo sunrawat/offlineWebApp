@@ -38,7 +38,7 @@
       "orientation": "portrait",
       "theme_color": "#29BDBB",
       "background_color": "#29BDBB",
-      "prefer_related_applications": true,
+      "prefer_related_applications": false,
   "related_applications": [
     {
       "platform": "play",
