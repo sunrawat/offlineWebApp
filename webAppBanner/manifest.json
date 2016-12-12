@@ -37,5 +37,12 @@
     "display": "standalone",
       "orientation": "portrait",
       "theme_color": "#29BDBB",
-      "background_color": "#29BDBB"
+      "background_color": "#29BDBB",
+      "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.naukriGulf.app"
+    }
+  ]
 }
