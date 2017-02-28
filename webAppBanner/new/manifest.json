@@ -1,0 +1,38 @@
+{
+  "name": "NaukriGulf",
+  "short_name": "NaukriGulf",
+  "icons": [
+    {
+      "src": "ng36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "ng48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "ng72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "ng96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "ng144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "ng192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
