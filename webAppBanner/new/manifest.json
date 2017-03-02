@@ -34,5 +34,12 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone"
+  "display": "standalone",
+  "prefer_related_applications": false,
+   "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.naukriGulf.app"
+    }
+  ]
 }
