@@ -34,10 +34,24 @@ limitations under the License.
           console.error(whut);*/
         });
        
-/*      window.addEventListener('beforeinstallprompt', function(e) {
-        outputElement.textContent = 'beforeinstallprompt Event fired';
-      });*/
+  window.addEventListener('beforeinstallprompt', function (e) {
+    // beforeinstallprompt Event fired
+    // e.userChoice will return a Promise.
+    e.userChoice.then(function (choiceResult) {
+      if (choiceResult.outcome != 'dismissed') {
+        var newImgforApp = document.createElement('img');
+        newImgforApp.src = 'https://static.naukimg.com/s/2/200/i/spacer.gif';
+        newImgforApp.style.height = '0';
+        newImgforApp.style.width = '0';
+        newImgforApp.onload= function(){
+          alert('image loaded !!!');
+        }
+        document.body.appendChild(newImgforApp)
+      }
     });
+  });
+    });
+
     </script>
   </head>
   <body>
